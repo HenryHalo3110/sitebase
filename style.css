@@ -1,7 +1,6 @@
-/* Variáveis de cores para personalizar */
 :root {
-  --cor-principal: #ff6600; /* laranja */
-  --cor-secundaria: #ffffff; /* branco */
+  --cor-principal: #ff6600; 
+  --cor-secundaria: #ffffff; 
   --cor-texto: #111111;
 }
 
@@ -15,38 +14,38 @@ body {
   font-size: 16px;
 }
 
-/* Banner com navegação */
-.banner {
-  background: url("https://picsum.photos/1200/400?random=5") no-repeat center center/cover;
-  padding: 40px;
-  color: var(--cor-secundaria);
-  text-align: center;
-  position: relative;
+/* Menu fixo no topo */
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: var(--cor-principal);
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .menu button {
-  background: var(--cor-principal);
+  background: #fff;
   border: none;
-  padding: 10px 20px;
-  margin: 5px;
-  color: #fff;
+  padding: 8px 16px;
   cursor: pointer;
   border-radius: 5px;
 }
 
 .menu button:hover {
-  background: #cc5200;
+  background: #ddd;
 }
 
-/* Botões de acessibilidade */
+/* Botões de acessibilidade dentro do menu */
 .acessibilidade {
-  position: absolute;
-  top: 10px;
-  right: 10px;
+  margin-left: auto;
 }
 
 .acessibilidade button {
-  margin: 0 3px;
+  margin: 0 2px;
   padding: 6px 10px;
   border: none;
   background: #fff;
@@ -54,37 +53,62 @@ body {
   border-radius: 5px;
 }
 
+/* Banner separado */
+.banner {
+  text-align: center;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* Sessão Sobre */
 .sobre {
-  background: url("https://picsum.photos/1200/300?random=6") center/cover no-repeat;
+  background: url("https://picsum.photos/1200/500?random=11") center/cover no-repeat;
+  position: relative;
+  padding: 60px 20px;
+}
+
+.sobre::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4); /* fundo transparente escuro */
+}
+
+.sobre-content {
+  position: relative;
+  max-width: 600px;
+  margin: auto;
   text-align: center;
-  padding: 50px 20px;
-  color: var(--cor-secundaria);
+  color: #fff;
   text-shadow: 1px 1px 3px #000;
 }
 
-/* Sessão Galeria */
+/* Sessão Galeria (imagens menores) */
 .galeria {
   text-align: center;
-  padding: 50px 20px;
+  padding: 40px 20px;
 }
 
 .grid-galeria {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 15px;
-  max-width: 800px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  max-width: 700px;
   margin: auto;
 }
 
 .grid-galeria img {
   width: 100%;
-  border-radius: 8px;
+  border-radius: 6px;
 }
 
 /* Sessão Contato */
 .contato {
-  padding: 50px 20px;
+  padding: 40px 20px;
   text-align: center;
 }
 
@@ -110,19 +134,4 @@ form button {
 }
 
 form button:hover {
-  background: #cc5200;
-}
-
-/* Rodapé */
-footer {
-  background: var(--cor-principal);
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-}
-
-.social a {
-  margin: 0 10px;
-  color: #fff;
-  text-decoration: none;
-}
+  background
