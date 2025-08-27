@@ -8,18 +8,20 @@
   <script defer src="acessibilidade.js"></script>
 </head>
 <body>
-  <!-- Menu no topo -->
+  <!-- Menu no topo centralizado -->
   <nav class="menu">
     <button onclick="location.href='#home'">Home</button>
     <button onclick="location.href='#sobre'">Sobre</button>
     <button onclick="location.href='#galeria'">Galeria</button>
     <button onclick="location.href='#contato'">Contato</button>
-    <div class="acessibilidade">
-      <button onclick="aumentarFonte()">A+</button>
-      <button onclick="diminuirFonte()">A-</button>
-      <button onclick="resetFonte()">Resetar</button>
-    </div>
   </nav>
+
+  <!-- Botões de acessibilidade -->
+  <div class="acessibilidade">
+    <button onclick="aumentarFonte()">A+</button>
+    <button onclick="diminuirFonte()">A-</button>
+    <button onclick="resetFonte()">Resetar</button>
+  </div>
 
   <!-- Banner separado -->
   <header id="home" class="banner">
@@ -43,8 +45,6 @@
     <div class="grid-galeria">
       <img src="https://picsum.photos/300/200?random=1" alt="Imagem 1">
       <img src="https://picsum.photos/300/200?random=2" alt="Imagem 2">
-      <img src="https://picsum.photos/300/200?random=3" alt="Imagem 3">
-      <img src="https://picsum.photos/300/200?random=4" alt="Imagem 4">
     </div>
   </section>
 
