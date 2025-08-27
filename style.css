@@ -58,14 +58,14 @@ body {
 }
 
 .banner img {
-  width: 100%;
+  width: 80%;
   height: auto;
   display: block;
 }
 
 /* Sessão Sobre */
 .sobre {
-  background: url("https://picsum.photos/1200/500?random=11") center/cover no-repeat;
+  background: url("https://www.nbcstore.com/cdn/shop/collections/friends-banner_1.jpg?v=1689008154") center/cover no-repeat;
   position: relative;
   padding: 60px 20px;
 }
