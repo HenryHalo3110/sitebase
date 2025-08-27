@@ -14,17 +14,13 @@ body {
   font-size: 16px;
 }
 
-/* Menu fixo no topo */
+/* Menu centralizado */
 .menu {
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 10px;
+  gap: 15px;
   background: var(--cor-principal);
-  padding: 10px;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+  padding: 12px;
 }
 
 .menu button {
@@ -39,18 +35,21 @@ body {
   background: #ddd;
 }
 
-/* Botões de acessibilidade dentro do menu */
+/* Botões de acessibilidade */
 .acessibilidade {
-  margin-center: auto;
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
 }
 
 .acessibilidade button {
-  margin: 0 2px;
+  margin: 0 5px;
   padding: 6px 10px;
   border: none;
   background: #fff;
   cursor: pointer;
   border-radius: 5px;
+  border: 1px solid #ccc;
 }
 
 /* Banner separado */
@@ -75,19 +74,19 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.4); /* fundo transparente escuro */
+  background: rgba(0, 0, 0, 0.4); /* leve transparência */
 }
 
 .sobre-content {
   position: relative;
-  max-width: 600px;
+  max-width: 500px;
   margin: auto;
   text-align: center;
   color: #fff;
   text-shadow: 1px 1px 3px #000;
 }
 
-/* Sessão Galeria (imagens menores) */
+/* Sessão Galeria (apenas 2 imagens) */
 .galeria {
   text-align: center;
   padding: 40px 20px;
@@ -96,8 +95,8 @@ body {
 .grid-galeria {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-  max-width: 700px;
+  gap: 15px;
+  max-width: 650px;
   margin: auto;
 }
 
@@ -134,4 +133,19 @@ form button {
 }
 
 form button:hover {
-  background
+  background: #cc5200;
+}
+
+/* Rodapé */
+footer {
+  background: var(--cor-principal);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.social a {
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+}
