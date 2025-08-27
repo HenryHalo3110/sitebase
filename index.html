@@ -8,38 +8,43 @@
   <script defer src="acessibilidade.js"></script>
 </head>
 <body>
-  <!-- Cabeçalho com Banner -->
-  <header class="banner" id="home">
-    <nav class="menu">
-      <button onclick="location.href='#home'">Home</button>
-      <button onclick="location.href='#sobre'">Sobre</button>
-      <button onclick="location.href='#galeria'">Galeria</button>
-      <button onclick="location.href='#contato'">Contato</button>
-    </nav>
+  <!-- Menu no topo -->
+  <nav class="menu">
+    <button onclick="location.href='#home'">Home</button>
+    <button onclick="location.href='#sobre'">Sobre</button>
+    <button onclick="location.href='#galeria'">Galeria</button>
+    <button onclick="location.href='#contato'">Contato</button>
     <div class="acessibilidade">
       <button onclick="aumentarFonte()">A+</button>
       <button onclick="diminuirFonte()">A-</button>
       <button onclick="resetFonte()">Resetar</button>
     </div>
+  </nav>
+
+  <!-- Banner separado -->
+  <header id="home" class="banner">
+    <img src="https://picsum.photos/1200/400?random=10" alt="Banner do site">
   </header>
 
   <!-- Sessão Sobre -->
   <section id="sobre" class="sobre">
-    <h1>Sobre Nós</h1>
-    <p>
-      Nosso site é simples, acessível e pensado para todos os públicos.
-      Aqui você pode navegar pelas sessões com facilidade e ajustar o tamanho das fontes conforme sua necessidade.
-    </p>
+    <div class="sobre-content">
+      <h1>Sobre Nós</h1>
+      <p>
+        Nosso site é simples, acessível e pensado para todos os públicos.
+        Aqui você pode navegar pelas sessões com facilidade e ajustar o tamanho das fontes conforme sua necessidade.
+      </p>
+    </div>
   </section>
 
   <!-- Sessão Galeria -->
   <section id="galeria" class="galeria">
     <h2>Galeria</h2>
     <div class="grid-galeria">
-      <img src="https://picsum.photos/400/300?random=1" alt="Imagem 1">
-      <img src="https://picsum.photos/400/300?random=2" alt="Imagem 2">
-      <img src="https://picsum.photos/400/300?random=3" alt="Imagem 3">
-      <img src="https://picsum.photos/400/300?random=4" alt="Imagem 4">
+      <img src="https://picsum.photos/300/200?random=1" alt="Imagem 1">
+      <img src="https://picsum.photos/300/200?random=2" alt="Imagem 2">
+      <img src="https://picsum.photos/300/200?random=3" alt="Imagem 3">
+      <img src="https://picsum.photos/300/200?random=4" alt="Imagem 4">
     </div>
   </section>
 
