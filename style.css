@@ -12,6 +12,18 @@ body {
   color: var(--cor-texto);
   line-height: 1.6;
   font-size: 16px;
+
+  /* Mantém footer no final */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  /* Remove scroll lateral */
+  overflow-x: hidden;
+}
+
+main {
+  flex: 1; /* ocupa espaço entre header e footer */
 }
 
 /* Menu centralizado */
@@ -58,9 +70,11 @@ body {
 }
 
 .banner img {
-  width: 80%;
+  width: 100%;
+  max-width: 1200px; /* garante que não estoura */
   height: auto;
   display: block;
+  margin: 0 auto;
 }
 
 /* Sessão Sobre */
@@ -74,7 +88,7 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.4); /* leve transparência */
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .sobre-content {
@@ -86,7 +100,7 @@ body {
   text-shadow: 1px 1px 3px #000;
 }
 
-/* Sessão Galeria (apenas 2 imagens) */
+/* Galeria */
 .galeria {
   text-align: center;
   padding: 40px 20px;
@@ -105,7 +119,7 @@ body {
   border-radius: 6px;
 }
 
-/* Sessão Contato */
+/* Contato */
 .contato {
   padding: 40px 20px;
   text-align: center;
@@ -136,26 +150,12 @@ form button:hover {
   background: #cc5200;
 }
 
-/* Footer fixado no final da página */
+/* Footer */
 footer {
-  background-color: #111; /* cor de fundo */
-  color: #fff; /* cor do texto */
+  background-color: #111;
+  color: #fff;
   text-align: center;
   padding: 15px;
-  position: relative; /* mantém o fluxo normal */
-  bottom: 0;
+  margin-top: auto;
   width: 100%;
-  margin-top: auto; /* empurra o footer para baixo */
 }
-
-/* Faz o layout sempre empurrar o footer para o final */
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-main {
-  flex: 1; /* ocupa o espaço restante */
-}
-
